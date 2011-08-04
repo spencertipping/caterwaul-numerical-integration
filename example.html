@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js'></script>
+  <script src='http://caterwauljs.org/build/caterwaul.js'></script>
+  <script src='http://caterwauljs.org/build/extensions/std.pre.js'></script>
+  <script src='http://caterwauljs.org/build/extensions/ui.pre.js'></script>
+
+  <script src='integrate.js'></script>
+  <script src='error-function.js'></script>
+
+  <script>
+  $(caterwaul.js_ui(caterwaul.js_all())(function () {
+    $('body').append(jquery [h1('Error function values')],
+                     jquery [table]
+                     -effect- n[0, 1, 0.01] *[{value: x, erf: caterwaul.numerical_error_function(x)}] *![it.append(jquery in tr(td[x.value.toFixed(4)], td[x.erf]))] /seq);
+  }));
+  </script>
+
+  <link rel='stylesheet' href='style.css' />
+  </head>
+  <body></body>
+</html>

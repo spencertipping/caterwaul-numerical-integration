@@ -1,0 +1,10 @@
+Numerical integration in Caterwaul | Spencer Tipping
+Licensed under the terms of the MIT source code license
+
+Introduction.
+This library provides simple numerical integration using Simpson's rule. I've also included an error function implementation for the sake of example.
+
+caterwaul.js_all()(function () {
+  caterwaul.numerically_integrate(f, a, b, h) = (weighted_midpoints * 4 + weighted_endpoints * 2 + f(a) + f(b)) * h / 3
+                                                -where [weighted_midpoints = n[a + h/2, b - h/2, h] *[f(x)] /[x + x0] -seq,
+                                                        weighted_endpoints = n[a + h,   b,       h] *[f(x)] /[x + x0] -seq]})();
